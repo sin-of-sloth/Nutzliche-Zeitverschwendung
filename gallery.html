@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Navigation Bar</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+        <!-- CSS -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <div class="navbar-fixed">
+            <nav class="black" role="navigation">
+                <div class="nav-wrapper">
+                    <a href="navbar.html" class="brand-logo right"><img class="responsive-img" src="img/logo-with-text.png"></a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="gallery.html">Gallery</a></li>
+                        <li><a href="the-showroom.html">The Showroom</a></li>
+                        <li><a href="nav-item3.html">Nav-Item</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="px7break"></div>
+        <!-- Slideshow -->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="img/slide1.jpg" style="width:100%">
+                <div class="text">Cyberp8nk from stmed.net</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="img/slide2.jpg" style="width:100%">
+                <div class="text">Cyberpunk2 by guhrate</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="img/slide3.jpg" style="width:100%">
+                <div class="text">171138 from stmed.net</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="img/slide4.jpg" style="width:100%">
+                <div class="text">Cyberpunk City by An0nymouse</div>
+            </div><a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div class="slideshow-dots" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        <br>
+
+        <!-- Footer -->
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Created By</h5>
+                        <div class="col s12 l4">
+                            <img class="myimg"src="img/alexandra-hodgson-algol3.jpg">
+                        </div>
+                        <div class="col s12 l8">
+                            <p class="grey-text text-lighten-4">Aspiring Gazillionaire, Food Enthusiast, Bookworm, Professional Irritator, Part-time Gamer and The Devil's Advocate.</p>
+                        </div>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Social(?) Media</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="https://www.gmail.com"><img class="footer-img" src="img/gmail.jpg"> thedarklordisrising@gmail.com</a></li>
+                            <li><a class="grey-text text-lighten-3" href="https://web.whatsapp.com"><img class="footer-img github   " src="img/whatsapp.png"> +91 7907977056</a></li>
+                            <li><a class="grey-text text-lighten-3" href="https://github.com/theSleepDeprivedCoder"><img class="footer-img github" src="img/github.jpg"> GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    &#169; 2020 Copyright
+                </div>
+            </div>
+        </footer>
+
+        <!-- JavaScript -->
+        <!-- Slideshow -->
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            } 
+        </script>
+    </body>
+
+</html>

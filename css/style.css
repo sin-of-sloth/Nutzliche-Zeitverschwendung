@@ -1,0 +1,238 @@
+body {
+    background-color: rebeccapurple;
+    margin: 0;
+    padding: 0;
+}
+
+.responsive-img {
+    height: 64px;
+    width: 231px;
+}
+
+/*Transitions + Animations*/
+@keyframes colorer {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+.trans {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.trans:hover {
+    width: 300px;
+    height: 300px;
+    animation-name: colorer;
+    animation-duration: 5s;
+}
+
+.myimg {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.page-footer .white-text {
+    font-family: 'Permanent Marker', cursive;
+    color: black  !important;
+}
+
+.page-footer .btn {
+    background-color:rebeccapurple;
+}
+
+.footer-img {
+    height: 13px;
+    width: auto;
+}
+
+.github {
+    height: 17px !important;
+    margin: -4px 0px -4px 0px;
+}
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+    max-width: 1100px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.px7break {
+    padding-top: 7px;
+}
+
+.parallax1 {
+    background-image: url(../img/parallax1.jpg);
+}
+
+.parallax2 {
+    background-image: url(../img/parallax2.jpg);
+}
+
+.parallax3 {
+    background-image: url(../img/parallax3.jpg);
+}
+
+.parallax4 {
+    background-image: url(../img/parallax4.jpg);
+}
+
+.parallax5 {
+    background-image: url(../img/parallax5.jpg);
+}
+
+.parallax6 {
+    background-image: url(../img/parallax6.jpg);
+}
+
+.parallax {
+    height: 550px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card .car-title {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.lambo-logo {
+    height: 25px;
+    width: 25px;
+    margin: -4px 0px -4px -4px;
+}
+
+.mustang-logo {
+    height: 21px;
+    width: 50px;
+    margin-top: 5px;
+}
+
+.lada-logo {
+    height: 21px;
+    width: 48px;
+    margin-right: 5px;
+}
+
+.mclaren-logo {
+    height: 21px;
+    width: 90px;
+    margin-right: 5px;
+}
+
+.koenigsegg-logo {
+    height: 21px;
+    width: 19.5px;
+    margin-right: 5px;
+}
+
+.astonmartin-logo {
+    height: 21px;
+    width: 46px;
+    margin-right: 5px;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rebeccapurple;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+#myBtn:hover {
+    background-color: black;
+}

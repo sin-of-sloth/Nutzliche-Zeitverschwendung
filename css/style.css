@@ -9,6 +9,37 @@ body {
     width: 231px;
 }
 
+nav ul {
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 100;
+}
+
+nav ul li.active {
+    background-color: rebeccapurple !important;
+}
+
+nav ul a {
+    -webkit-transition: background-color .9s, width .9s, height .9s, -webkit-transform .9s;
+    transition: background-color .9s, width .9s, height .9s, transform .9s;
+}
+
+nav ul a:hover {
+    height: 70px;
+    width:auto;
+    background-color: white !important;
+    color: black;
+    -webkit-box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+}
+
+.page-footer {
+    background-color: grey !important;
+}
+
+.page-footer .footer-copyright {
+    background-color: black !important;
+}
+
 /*Transitions + Animations*/
 @keyframes colorer {
     from {background-color: red;}
@@ -220,7 +251,7 @@ body {
 #myBtn {
     display: none;
     position: fixed;
-    bottom: 20px;
+    bottom: 30px;
     right: 30px;
     z-index: 99;
     border: none;
